@@ -427,4 +427,8 @@ export class OhMyLive2D implements Oml2dProperties, Oml2dMethods, Oml2dEvents {
       this.tips.copy();
     };
   }
+
+  public playMotion(motionGroupName: string, index?: number) : void {
+    void this.models.playMotion(motionGroupName, index);
+  }
 }
